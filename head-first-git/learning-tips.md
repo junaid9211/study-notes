@@ -1,5 +1,8 @@
 # Getting the most out of your brain
 
+The faster and effective way of learning is to do **anything that increases the brain activity** below are some great methods to get started.
+
+
 ## 1. Slow down
 The more you understand the less you have to cram. Don't just read the book, stop and think about the topics.
 
