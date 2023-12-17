@@ -22,5 +22,30 @@ To start working with git you need to convert your project into a git repo, to d
     - `-A` flag used to outputs **All**  files including **hidden** files
 
     
+## Configuring name and email
+- `git config --global user.name "Junaid Mughal"`
+- `git config --global user.email "junaidgohan123@gmail.com"`
+
+## Commit Basics
+Commiting our work requires two steps
+- Adding our work `git add FILE-NAME`
+- Commiting our work `git commit -m "Your Message"`
+
+## The tree stages of git
+- working directory
+- index also called staging area
+- object database where all commits are stored
+
+index is used to house our changes temporarily before they are commited to the object database
+
+file that has never been added to the index is marked as 'untracked' 
+
+file that has added to index is marked as tracked
+after commit a file it is marked as unmodified
+
+
+## git status
+`git status` this command tells which files are untracked, modified and are in staging area
+- to shorten the output, you can provide `-s` flag
 
 
