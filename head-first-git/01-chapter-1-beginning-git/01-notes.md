@@ -31,7 +31,7 @@ Commiting our work requires two steps
 - Adding our work `git add FILE-NAME`
 - Commiting our work `git commit -m "Your Message"`
 
-## The tree stages of git
+## The three stages of git
 - working directory
 - index also called staging area
 - object database where all commits are stored
@@ -40,12 +40,18 @@ index is used to house our changes temporarily before they are commited to the o
 
 file that has never been added to the index is marked as 'untracked' 
 
-file that has added to index is marked as tracked
-after commit a file it is marked as unmodified
+file that has added to index is marked as tracked and
+after commit it is marked as unmodified
 
 
 ## git status
 `git status` this command tells which files are untracked, modified and are in staging area
 - to shorten the output, you can provide `-s` flag
 
+
+## Commit history
+Every commit has an unique commit id, every commit also stores the commit id of the previous commit (except the first commit). 
+Following parent from current commit is what creates a `commit history`
+
+<img src="commit-history.png" width="450px">
 
