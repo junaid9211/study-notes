@@ -31,6 +31,8 @@ Commiting our work requires two steps
 - Adding our work `git add FILE-NAME`
 - Commiting our work `git commit -m "Your Message"`
 
+To remove a file from index you can use `git reset FILE-NAME` or `git reset` to empty the index
+
 ## The three stages of git
 - working directory
 - index also called staging area
