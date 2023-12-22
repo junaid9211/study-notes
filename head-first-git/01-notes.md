@@ -27,9 +27,9 @@ To start working with git you need to convert your project into a git repo, to d
 - `git config --global user.email "junaidgohan123@gmail.com"`
 
 ## Commit Basics
-Commiting our work requires two steps
+Committing our work requires two steps
 - Adding our work `git add FILE-NAME`
-- Commiting our work `git commit -m "Your Message"`
+- Committing our work `git commit -m "Your Message"`
 
 To remove a file from index you can use `git reset FILE-NAME` or `git reset` to empty the index
 
@@ -38,7 +38,7 @@ To remove a file from index you can use `git reset FILE-NAME` or `git reset` to 
 - index also called staging area
 - object database where all commits are stored
 
-index is used to house our changes temporarily before they are commited to the object database
+index is used to house our changes temporarily before they are committed to the object database
 
 file that has never been added to the index is marked as 'untracked' 
 
