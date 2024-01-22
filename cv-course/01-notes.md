@@ -31,3 +31,31 @@ arr.reshape(row, column)
 arr[row, col]  # returns a value at the location
 arr[r0:r1, c0: c1]  # returns a subsection of the array
 ```
+
+
+### working with images
+image has 3 dimentions (height, width, color)
+1. height
+2. width
+3. color channels
+
+for example the shape (1280, 720, 3)
+- 1280 is height
+- 720 is width
+- is the rgb color channels
+
+
+```python
+# imports
+import matplotlib.pyplot as plt
+from PIL import Image
+
+# open image
+pic = Image.open('image/path')
+
+# convert image to np array
+pic_arr = np.asarray(pic)
+
+# display image
+plt.imshow(pic_arr)
+```
