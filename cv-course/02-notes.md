@@ -33,3 +33,24 @@ pos can be 1 of 3 values
 ```python
 cv2.flip(img, pos)
 ```
+
+
+### save image
+```python
+cv2.imwrite('IMAGE_PATH', img)
+```
+
+### displaying image using opencv
+```python
+import cv2
+
+img = cv2.imread('../DATA/00-puppy.jpg')
+
+while True:
+    cv2.imshow('Puppy', img)
+    
+    if cv2.waitKey(1) & 0xFF == 27: # quite on pressing escape
+        break
+    
+cv2.destroyAllWindows()
+```
