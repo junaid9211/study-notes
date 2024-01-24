@@ -49,8 +49,15 @@ img = cv2.imread('../DATA/00-puppy.jpg')
 while True:
     cv2.imshow('Puppy', img)
     
-    if cv2.waitKey(1) & 0xFF == 27: # quite on pressing escape
+    if cv2.waitKey(1) & 0xFF == 27: # quit by pressing escape
         break
     
 cv2.destroyAllWindows()
+```
+
+### Code snippet to increase plot size in matplotlib
+```python
+fig = plt.figure(figsize=(10,8))
+ax = fig.add_subplot(111)
+ax.imshow(img)
 ```
