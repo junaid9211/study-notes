@@ -1,4 +1,4 @@
-# More on Opencv
+# Drawing on Images
 
 ### drawing shapes on images
 shapes are drawn inplace on the image arrays.
@@ -69,4 +69,49 @@ while True:
         
 cv2.destroyAllWindows()
     
+```
+
+
+### drawing using a mouse example 2
+Script draws a rectangle using drag
+```python
+import cv2
+import numpy as np
+from random import choice
+
+drawing = False
+ix, iy = -1, -1
+
+def draw_rect(event, x, y , flag, params):
+    global drawing, ix, iy
+    
+    if event == cv2.EVENT_LBUTTONDOWN:
+        drawing = True
+        ix, iy = x, y
+        
+    elif event == cv2.EVENT_MOUSEMOVE:
+        if drawing:
+            c = [(0, 0, 255), (0, 255, 0), (255, 0, 0)]
+            cv2.line(img, (ix, iy), (x, y), choice(c), 5)
+            ix, iy = x, y
+        
+    elif event == cv2.EVENT_LBUTTONUP:
+        drawing = False
+    
+    
+
+img = np.zeros((512, 512, 3), np.uint8)
+img_ref = 'my_window'
+
+cv2.namedWindow(winname=img_ref)
+cv2.setMouseCallback(img_ref, draw_rect)
+
+while True:
+    cv2.imshow(img_ref, img)
+    
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cv2.destroyAllWindows()
+
 ```
