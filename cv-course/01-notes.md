@@ -26,7 +26,7 @@ arr.argmin()
 arr.reshape(row, column)
 ```
 
-### indexting
+### indexing
 ```python
 arr[row, col]  # returns a value at the location
 arr[r0:r1, c0: c1]  # returns a subsection of the array
