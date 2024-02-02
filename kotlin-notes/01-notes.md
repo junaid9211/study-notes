@@ -37,6 +37,20 @@ if (myAge > yourAge) {
 }
 ```
 
+### while loop
+```kotlin
+// just like any other language
+while (x<=10){
+    println(x)
+    x++
+}
+
+do {
+    println(x)
+    x++
+} while (x<=10)
+```
+
 ### when statement
 ```kotlin
 // it replaces switch from java
